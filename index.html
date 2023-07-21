@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Fashion</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/1856f306ae.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .font-bebas {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        .font-roboto {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
 </head>
+
 <body class="m-0 p-0">
 
     <!-- header section -->
 
-    <header class="bg-[#FFFBF0]">
-        
+    <header class="bg-[#FFFBF0] px-2.5 md:px-40">
+
         <!-- nav section -->
 
-        <nav class="flex justify-around items-center py-6 text-[#3C3C3C]">
+        <nav class="flex justify-between items-center py-6 text-[#3C3C3C]">
             <a href=""><img src="icons/logo.png" alt="" class="w-80"></a>
-            <div class="flex gap-10 list-none font-medium">
+            <div class="flex gap-10 list-none font-roboto font-medium">
                 <li class="hover:text-orange-600"><a href="">Home</a></li>
                 <li class="hover:text-orange-600"><a href="">Product</a></li>
                 <li class="hover:text-orange-600"><a href="">About Us</a></li>
@@ -28,17 +43,18 @@
 
         <!-- banner section -->
 
-        <div class="flex justify-around items-center pt-10 pb-40">
+        <div class="flex flex-col md:flex-row justify-between items-center pt-8 md:pt-2 pb-24 md:pb-36">
             <div>
-                <h1 class="text-7xl"><span class="text-[#FABE4C]">Be the Penguins</span><br>of Winter</h1>
-                <p class="leading-6 pt-5 pb-8">Lorem Ipsum is simply dummy text of the printing<br>and typesetting industry.</p>
+                <h1 class="text-7xl font-bebas"><span class="text-[#FABE4C]">Be the Penguins</span><br>of Winter</h1>
+                <p class="leading-6 pt-3 pb-10">Lorem Ipsum is simply dummy text of the printing<br>and typesetting industry.</p>
                 <button class="w-40 h-12 text-white font-medium bg-gradient-to-r from-[#A4BC46] to-[#85A019]
                 rounded-lg hover:text-black"><i class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
             </div>
             <div>
-                <img src="images/model.png" alt="" class="">
+                <img src="images/model.png" alt="" class="w-80 md:w-full mt-12">
             </div>
         </div>
     </header>
 </body>
+
 </html>
